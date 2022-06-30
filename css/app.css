@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /* LAYOUT */
 main {
     min-height: 100vh;
@@ -11,6 +16,20 @@ main {
     flex-direction: column;
 }
 
+.container {
+    padding: 78px 88px 28px 88px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc(100% / 7 );
+}
+
+/* USER VIEW */
 .user-view {
     position: relative;
     flex-grow: 1;
@@ -37,10 +56,27 @@ main {
     margin-right: 8px;
 }
 
+.card-speaker {
+    position: relative;
+}
+
+.card-speaker .speaker__control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    line-height: 27px;
+    padding: 0 4px;
+}
+
+
 /* DEBUG */
-.debug .user-view {
-    /* background-color: aquamarine; */
-    /* padding: 16px; */
+.debug .container {
+    border: 1px solid goldenrod;
+}
+
+.debug .col {
+    border: 1px solid goldenrod;
 }
 
 .debug .toolbar {
