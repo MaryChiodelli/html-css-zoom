@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+/* LAYOUT */
 main {
     min-height: 100vh;
     display: flex;
@@ -11,14 +12,35 @@ main {
 }
 
 .user-view {
+    position: relative;
     flex-grow: 1;
+    background-color: black;
+    color: white;
 }
 
+.view-options {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.view-options .view-mode,
+.view-options .resize {
+    display: inline-block;
+    line-height: 25px;
+    padding: 0 4px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 4px;
+}
+
+.view-options .view-mode {
+    margin-right: 8px;
+}
 
 /* DEBUG */
 .debug .user-view {
-    background-color: aquamarine;
-    padding: 16px;
+    /* background-color: aquamarine; */
+    /* padding: 16px; */
 }
 
 .debug .toolbar {
