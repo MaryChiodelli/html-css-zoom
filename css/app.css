@@ -23,10 +23,13 @@ main {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -4px;
 }
 
 .col {
     flex-basis: calc(100% / 7 );
+    padding: 0 4px;
+    margin-bottom: 8px;
 }
 
 /* USER VIEW */
@@ -71,14 +74,6 @@ main {
 
 
 /* DEBUG */
-.debug .container {
-    border: 1px solid goldenrod;
-}
-
-.debug .col {
-    border: 1px solid goldenrod;
-}
-
 .debug .toolbar {
     background-color: sandybrown;
     padding: 16px;
