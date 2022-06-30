@@ -98,13 +98,23 @@ main {
     gap: 20px;
 }
 
+
 .tool-wrapper .tool {
+    display: flex;
+    gap: 20px;
+}
+
+.tool__icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
 
-.tool-wrapper .tool i {
+.tool__icon i {
     font-size: 24px;
+}
+
+.tool.tool--green .tool__icon i {
+    color: #4BC800;
 }
