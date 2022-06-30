@@ -9,6 +9,22 @@ img {
     max-width: 100%;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    color: currentColor;
+    border: none;
+}
+
 /* LAYOUT */
 main {
     min-height: 100vh;
@@ -36,8 +52,6 @@ main {
 .user-view {
     position: relative;
     flex-grow: 1;
-    background-color: black;
-    color: white;
 }
 
 .view-options {
@@ -72,9 +86,25 @@ main {
     padding: 0 4px;
 }
 
+/* TOOLBAR */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 8px;
+}
 
-/* DEBUG */
-.debug .toolbar {
-    background-color: sandybrown;
-    padding: 16px;
+.tool-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.tool-wrapper .tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.tool-wrapper .tool i {
+    font-size: 24px;
 }
